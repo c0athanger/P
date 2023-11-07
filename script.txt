@@ -1,0 +1,50 @@
+Heuristic #1
+When my program starts, there is a short explanation 
+of the benefits of this application is for playing poker.
+Heuristic #2
+There is also a brief warning about betting responsible, 
+to explain ths costs of this app.
+Heuristic #3
+info is not cluttered, if player needs help they can type 
+help. If you want to know more about your hand, type help.
+Heuristic #4
+Follows familiar rules of poker. Commands are also similar.
+Heuristic #5
+Players can shuffle when they need to, allowing for backtracking.
+shuffle
+Heuristic #8
+However performing a drastic action such as shuffling will bring
+up a warning
+Heuristic #7
+can refer to help on how to play poker. Future iterations
+will have more control over user pathing.
+Heuristic #6
+Poker is all about different strategies, you can 
+take many approaches depending on your playstyle.
+
+deal-players
+deal-flop
+
+raise p1 200
+call p2
+
+Quality #1 traceability
+At any point in the game you can trace the state of the game.
+You can see community cards as well as your own.
+
+show-player p1
+show-community
+
+Quality #2 Efficiency
+This program is very cheap to run, uses very little memory 
+or cpu. Actions only take place when needed.
+
+raise p1 400
+
+fold p2
+
+pot-payout p1
+
+Quality #3 Correctness
+Game runs correctly. Winner wins the correct amount of money.
+No crashs
