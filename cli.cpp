@@ -127,4 +127,18 @@ void cli(std::vector<std::string> &args)
 	{
 		p("Winner gained " + std::to_string(pot.total()));
 	}
+	else if (args[0] == "bank")
+	{
+		std::ofstream outfile;
+		outfile.open("../bankcomms.txt");
+		outfile << "request " + args[1] + " " + args[2] + " " + args[3] << std::endl;
+		outfile.close();
+		const std::filesystem::path p = "../bankcomms.txt";
+		auto last_mtime = std::filesystem::last_write_time(p);
+		while (last_mtime == std::filesystem::last_write_time(p))
+		{
+			sleep(1);
+		}
+		std::cout << "The bank has completed your transaction" << std::endl;
+	}
 }
