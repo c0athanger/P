@@ -141,4 +141,13 @@ void cli(std::vector<std::string> &args)
 		}
 		std::cout << "The bank has completed your transaction" << std::endl;
 	}
+	else if (args[0] == "check-bank")
+	{
+
+		std::fstream filein("../bankcomms.txt");
+		for (std::string line; std::getline(filein, line);)
+		{
+			std::cout << line << std::endl;
+		}
+	}
 }

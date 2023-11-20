@@ -1,3 +1,0 @@
-/home/guy/OSU/CS360/P/build/CMakeFiles/test.dir
-/home/guy/OSU/CS360/P/build/CMakeFiles/edit_cache.dir
-/home/guy/OSU/CS360/P/build/CMakeFiles/rebuild_cache.dir
